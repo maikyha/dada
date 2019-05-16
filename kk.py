@@ -24,7 +24,7 @@ print(colored('''
 МАЙКУХА ТОП, ССЫЛКУ СКИНУ В ЛС https://vk.com/fearlessz
 ''','red'))
 
-phone = input('Phone Number (Format +79/+380999999999')
+phone = input('Phone Number (Format +79/+380999999999): ')
 
 if phone[0:3] == '+79':
   countT = int(input('Потоков: '))
